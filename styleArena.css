@@ -17,5 +17,6 @@ ul:hover{
 
 .arena{
     border: solid black 1px;
-    width: 50%; height: 50%;
+    width: 50%; height: 200px;
+
 }
