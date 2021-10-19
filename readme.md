@@ -15,16 +15,24 @@ _Je souhaite que vos classes disposent d'au moins:_
 _Notre jeux doit disposer d'un espace qui affiche quelques éléments de contexte_
 
 **Michel Pierre**
+
 * un lieux (quelques choix)
+
 **Akin**
+
 * une entrée utilisateurs pour donner des précisions sur l'action en cours
+
 ****
 * ajout des joueurs
+
 **Grégor**
+
 * une liste de joueur participants avec le moyen d'être prêt a la joute
 
 _Les intèractions seront l'enjeux de notre battle, il devront avoir un espace significatif dans notre petit jeux_
+
 **Ali** (html)
+
 * Une partie du site dédier a l'affichage des joutes
 
 * Une entrée utilisateurs avec récéption/defense et envoie/attaque pour envoyer dans nos joutes ou alors pour envoyer des petits coeurs si vous etes une licorne  (optionnel pour aujourdhui )

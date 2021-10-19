@@ -1,0 +1,21 @@
+li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+li ul{
+    color: aliceblue;
+    background-color: black;
+    border: solid purple 1px;
+    padding: 15px;
+}
+
+ul:hover{
+    cursor: pointer;
+}
+
+.arena{
+    border: solid black 1px;
+    width: 50%; height: 50%;
+}
