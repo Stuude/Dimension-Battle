@@ -7,6 +7,37 @@
 
 
 
+
+.arena{
+    border: solid black 1px;
+    width: 50%; height: 300px;
+    background-size: cover;
+
+}
+/* Debut code creation de perso */
+form{
+
+    border: solid black 1px;
+   width:50%;
+   text-align: center;
+   background-color: aqua;
+
+}
+form div { 
+    margin-top : 10px;
+    
+}
+
+form div input, form div select{
+    margin:5px;
+    padding: 5px;
+}
+
+form div button{
+    padding: 10px;
+    border-radius: 90px;
+}
+
 /* Liste de personnage */
 #characterList{
     border: 1px solid purple;
@@ -17,7 +48,6 @@
 #characterList ul{
     list-style: none;
     margin: 10px 0px;
-
 }
 
 #characterList > ul{
