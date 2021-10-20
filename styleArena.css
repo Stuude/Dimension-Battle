@@ -38,6 +38,7 @@ form div {
 form div input, form div select{
     margin:5px;
     padding: 5px;
+    border-radius: 5px;
 
 }
 form div button{
