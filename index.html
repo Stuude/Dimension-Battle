@@ -14,6 +14,18 @@
 <!--akin code contexte aléatoire -->
 
 <body>
+
+    <div id="characterList">
+        <ul id="characterUl">
+            <!-- <li>
+                <ul>
+                    <li>Character One</li>
+                    <li>50/50</li>
+                </ul>
+            </li> -->
+        </ul>
+    </div>
+
     <button onclick="aleatoire();" id="btnalea">Contexte aléatoire</button>
     <div id="contexte_aleatoire"></div>
     <br><br>
@@ -27,6 +39,7 @@
 
     <!-- Choix arene liste + division qui contient image arene -->
     <h2>Choix de l'arène</h2>
+
     <!-- Creation d'un select (liste de choix déroulant) afin de choisir une arène, onchange permet de lié la fonction chooseArena au select (voir arena.js) -->
     <select name="maps" id="map-select" onchange="chooseArena()">
 
@@ -37,9 +50,10 @@
         <option value="jungle">Jungle</option>
         <option value="nocturne">Nocturne</option>
 
+
+
+
     </select>
-
-
 
 
 
@@ -48,6 +62,7 @@
         <script type="text/javascript" src="assets/js/arena.js"></script>
         <script type="text/javascript" src="assets/js/contexte.js"></script>
         <script type="text/javascript" src="assets/js/creation.js"></script>
+        <script type="text/javascript" src="assets/js/affichage.js"></script>
 
 </body>
 </html>
