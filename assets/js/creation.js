@@ -169,6 +169,11 @@ function ajouter() {
         alert(`On t'as dis entre 50 et 200 Ducon! Retourne en maternelle! Même mon gosse y arrive!`);
         return;
     };
+    if (ageperso.value == '') {
+        alert(`Jte savais jeune, mais au point de pas avoir d'avoir d'âge. La franchement, GG!`);
+        return;
+    };
+
 
     var personnage = new Personnage();
 
@@ -196,6 +201,37 @@ function AffichagePerso() {
     characterUl.innerHTML = text;
 }
 
+// Mise en place du départ de jeu
+var start = false;
+
+function Start() {
+    if (persoFull.length >= 3) {
+        start = true;
+        brnStop.style.display = 'inline';
+        brnStart.style.display = 'none';
+    } else {alert(`Vous avez besoin d'au moins 3 personnages avant de commencer à jouer`)}
+}
+
+function Stop() {
+    start = false;
+    brnStop.style.display = 'none';
+    brnStart.style.display = 'inline';
+}
+
+var brnStart = document.createElement("BUTTON");
+brnStart.innerHTML = "START";
+brnStart.setAttribute("type", "button");
+brnStart.setAttribute("id", "start");
+brnStart.setAttribute("onclick", "Start()");
+document.getElementById('characterList').appendChild(brnStart);
+
+var brnStop = document.createElement("BUTTON");
+brnStop.innerHTML = "STOP";
+brnStop.setAttribute("type", "button");
+brnStop.setAttribute("id", "stop");
+brnStop.setAttribute("onclick", "Stop()");
+brnStop.style.display = 'none';
+document.getElementById('characterList').appendChild(brnStop);
 
 function listHero() {
 console.log("vous devez créer au moin un hero");
