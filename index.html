@@ -14,22 +14,30 @@
 <!--akin code contexte aléatoire -->
 
 <body>
-        <button onclick="aleatoire();" id="btnalea">Contexte aléatoire</button>
-        <div id="contexte_aleatoire"></div>
-        <br><br>
-        <!-- akin code contexte imposé par un joueur -->
-        <button onclick="ecritContext();" id="btnedit">Rediger le contexte</button>
-        <!-- akin script-->
+    <button onclick="aleatoire();" id="btnalea">Contexte aléatoire</button>
+    <div id="contexte_aleatoire"></div>
+    <br><br>
+    <!-- akin code contexte imposé par un joueur -->
+    <button onclick="ecritContext();" id="btnedit">Rediger le contexte</button>
+    <!-- akin script-->
 
+
+
+    <!-- Pierre/MichelChoix arene liste + division qui contient image arene -->
 
     <!-- Choix arene liste + division qui contient image arene -->
-        <h2>Choix de l'arène</h2>
-        <select name="maps" id="map-select" onchange="chooseArena()">
-            <option value="">Choose a map</option>
-            <option value="namek">Namek</option>
-            <option value="glaciale">Glaciale</option>
-            <option value="jungle">Jungle</option>
-            <option value="nocturne">Nocturne</option>
+    <h2>Choix de l'arène</h2>
+    <!-- Creation d'un select (liste de choix déroulant) afin de choisir une arène, onchange permet de lié la fonction chooseArena au select (voir arena.js) -->
+    <select name="maps" id="map-select" onchange="chooseArena()">
+
+        <option value="">Choose a map</option>
+        <!-- les balises option contiennent value qui permettent d'associer une image à l'option (voir arena.js) -->
+        <option value="namek">Namek</option>
+        <option value="glaciale">Glaciale</option>
+        <option value="jungle">Jungle</option>
+        <option value="nocturne">Nocturne</option>
+
+    </select>
 
 
         </select>
