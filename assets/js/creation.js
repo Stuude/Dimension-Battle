@@ -57,7 +57,7 @@ div1.appendChild(selectRace);
 
 // FIN DIV 1
 
-//DEBUT DIV 2 
+//DEBUT DIV 2
 
 // selection Equipement
 var selectEquip = document.createElement("select");
@@ -136,7 +136,7 @@ div2.append(pv);
 // FIN DIV 2
 
 
-//Creation buton de validation 
+//Creation buton de validation
 var btnConf = document.createElement("BUTTON");
 btnConf.innerHTML = "Creer";
 btnConf.setAttribute("type", "button");
@@ -146,7 +146,7 @@ div3.appendChild(btnConf);
 
 
 
-// definition classe 
+// definition classe
 
 class Personnage {
     constructor(nom, age, race, arme, pouvoir, pv) {
@@ -158,6 +158,7 @@ class Personnage {
         this.pv = pv;
     }
 };
+
 
 
 const persoFull = [];
@@ -172,6 +173,8 @@ function ajouter() {
         alert(`Jte savais jeune, mais au point de pas avoir d'avoir d'âge. La franchement, GG!`);
         return;
     };
+
+
     var personnage = new Personnage();
 
     personnage.nom = nomperso.value;
@@ -180,12 +183,15 @@ function ajouter() {
     personnage.arme = selectEquip.value;
     personnage.pouvoir = selectPouv.value;
     personnage.pv = pv.value;
+
     persoFull.push(personnage);
     console.log(persoFull);
 };
 
+//
 
-// Affichage des persos 
+
+// Affichage des persos
 function AffichagePerso() {
     var characterUl = document.getElementById('characterUl');
     var text = ''
@@ -196,35 +202,107 @@ function AffichagePerso() {
 }
 
 
+function listHero() {
+console.log("vous devez créer au moin un hero");
+persoFull.forEach((item, i) => {
+      if(item != "undefined")
+          {
+            alert(`<li><ul><li>` + persoFull[i].nom + `</li><li>` + persoFull[i].pv + `/` + persoFull[i].pv + `</li></ul></li>`)
 
-// Mise en place du départ de jeu
-var start = false;
+          } else {
+              alert("vous devez créer au moins un hero");
+          }
 
-function Start() {
-    if (persoFull.length >= 3) {
-        start = true;
-        brnStop.style.display = 'inline';
-        brnStart.style.display = 'none';
-    } else {alert(`Vous avez besoin d'au moins 3 personnages avant de commencer à jouer`)}
-}
+      }
+    );
+  }
 
-function Stop() {
-    start = false;
-    brnStop.style.display = 'none';
-    brnStart.style.display = 'inline';
-}
+var formLst = document.createElement("form");
+document.body.appendChild(formLst);
+var divLst = document.createElement("div");
+formLst.appendChild(divLst);
 
-var brnStart = document.createElement("BUTTON");
-brnStart.innerHTML = "START";
-brnStart.setAttribute("type", "button");
-brnStart.setAttribute("id", "start");
-brnStart.setAttribute("onclick", "Start()");
-document.getElementById('characterList').appendChild(brnStart);
+//Creation buton de validation
+var btnLst = document.createElement("BUTTON");
+btnLst.innerHTML = "List";
+btnLst.setAttribute("type", "button");
+btnLst.setAttribute("onclick", "listHero()");
 
-var brnStop = document.createElement("BUTTON");
-brnStop.innerHTML = "STOP";
-brnStop.setAttribute("type", "button");
-brnStop.setAttribute("id", "stop");
-brnStop.setAttribute("onclick", "Stop()");
-brnStop.style.display = 'none';
-document.getElementById('characterList').appendChild(brnStop);
+divLst.appendChild(btnLst);
+
+
+// creation de Formulaire D'interactions
+var formInteract = document.createElement("form");
+formInteract.setAttribute("id", "formInteract");
+document.body.appendChild(formInteract);
+// creation div interactions
+var div1Interact = document.createElement("div");
+formInteract.appendChild(div1Interact);
+var div2Interact = document.createElement("div");
+formInteract.appendChild(div2Interact);
+var div3Interact = document.createElement("div");
+formInteract.appendChild(div3Interact);
+// DEBUT DIV 1 interactions
+// creation input attaque interactions
+var atk = document.createElement("input");
+div1Interact.appendChild(atk);
+atk.setAttribute("placeholder", "attaque")
+
+
+// creation input defense interactions
+var def = document.createElement("input");
+div1Interact.appendChild(def);
+def.setAttribute("placeholder", "defense")
+
+// creation input defense interactions
+var all = document.createElement("input");
+div1Interact.appendChild(all);
+all.setAttribute("placeholder", "everything")
+// label pour le selecteur cible
+// selection cible
+var selectCible = document.createElement("select");
+var option = document.createElement("option");
+// ajout options a select
+selectCible.add(option);
+
+div1Interact.appendChild(selectCible);
+
+// FIN DIV 1
+
+//Creation buton de validation
+var btnPunch = document.createElement("BUTTON");
+btnPunch.innerHTML = "Action";
+btnPunch.setAttribute("type", "button");
+btnPunch.setAttribute("onclick", "getAction()");
+
+div3Interact.appendChild(btnPunch);
+
+// class Interact {
+//   constructor(atk,def,all,cible,user){
+//     this.atk =  atk();
+//     this.def =  def();
+//     this.all =  all();
+//     this.cible = persoFull.personnage[x].name;
+//     this.user = persoFull.personnage[x].name;
+//     alert(this.cible);
+//     alert(this.user);
+//   }
+//
+//   atk(x){
+//     var charge = x;
+//     alert(charge);
+//   }
+//
+//   def(x){
+//     var contre = x;
+//     alert(contre);
+//   }
+//
+//   all(x){
+//     var heart = x;
+//     alert(heart);
+//   }
+// }
+//
+//
+// var ready = new Interact(atk(5));

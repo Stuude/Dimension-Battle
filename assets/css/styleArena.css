@@ -1,7 +1,7 @@
 .arena{
     border: solid black 1px;
     width: 50%; height: 300px;
-    
+
 
 }
 
@@ -21,6 +21,17 @@ form{
    padding-bottom: 10px;
 
 }
+
+#formInteract{
+    margin-top: 10px;
+    border: solid black 1px;
+    width:50%;
+    text-align: center;
+    background:url("../img/img-arene/drakkar.jpg") center/cover no-repeat;
+    padding-bottom: 10px;
+
+}
+
 form div {
     margin-top : 10px;
 
@@ -56,4 +67,3 @@ form div button{
 #characterList > ul{
     margin: 20px 15px;
 }
-
