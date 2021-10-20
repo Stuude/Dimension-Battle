@@ -23,7 +23,7 @@ ul:hover{
 }
 /* Debut code creation de perso */
 form{
-
+    margin-top: 10px;
     border: solid black 1px;
    width:50%;
    text-align: center;
