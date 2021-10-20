@@ -22,9 +22,11 @@
         <!-- akin script-->
 
   
-    <!-- Choix arene liste + division qui contient image arene -->
+    <!-- Pierre/MichelChoix arene liste + division qui contient image arene -->
         <h2>Choix de l'arène</h2>
+        <!-- Creation d'un select (liste de choix déroulant) afin de choisir une arène, onchange permet de lié la fonction chooseArena au select (voir arena.js) -->
         <select name="maps" id="map-select" onchange="chooseArena()">
+        <!-- les balises option contiennent value qui permettent d'associer une image à l'option (voir arena.js) -->
             <option value="">Choose a map</option>
             <option value="Namek">Namek</option>
             <option value="Glaciale">Glaciale</option>
@@ -32,6 +34,7 @@
             <option value="Nocturne">Nocturne</option>
         
         </select>
+        <!-- division qui contient l'image selectionnée, l'ID permet d'associer la nature de ce qui est affiché en fonction du choix (voir arena.js) -->
         <div id="imgarene" class="arena" >
 
 
