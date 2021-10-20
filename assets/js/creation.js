@@ -202,7 +202,8 @@ console.log("vous devez créer au moin un hero");
 persoFull.forEach((item, i) => {
       if(item != "undefined")
           {
-            console.log(persoFull[i].nom);
+            alert(`<li><ul><li>` + persoFull[i].nom + `</li><li>` + persoFull[i].pv + `/` + persoFull[i].pv + `</li></ul></li>`)
+
           } else {
               alert("vous devez créer au moins un hero");
           }
@@ -252,29 +253,16 @@ def.setAttribute("placeholder", "defense")
 var all = document.createElement("input");
 div1Interact.appendChild(all);
 all.setAttribute("placeholder", "everything")
-
-
 // label pour le selecteur cible
-
-
 // selection cible
 var selectCible = document.createElement("select");
 var option = document.createElement("option");
-
-
-
-
-
-
-
 // ajout options a select
 selectCible.add(option);
 
 div1Interact.appendChild(selectCible);
 
 // FIN DIV 1
-
-
 
 //Creation buton de validation
 var btnPunch = document.createElement("BUTTON");
@@ -283,9 +271,6 @@ btnPunch.setAttribute("type", "button");
 btnPunch.setAttribute("onclick", "getAction()");
 
 div3Interact.appendChild(btnPunch);
-
-
-
 
 // class Interact {
 //   constructor(atk,def,all,cible,user){
