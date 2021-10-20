@@ -18,7 +18,7 @@ ul:hover{
 .arena{
     border: solid black 1px;
     width: 50%; height: 300px;
-    
+    background-size: cover;
 
 }
 /* Debut code creation de perso */
@@ -44,5 +44,6 @@ form div button{
     padding: 10px;
     border-radius: 90px;
 }
+
 
 
