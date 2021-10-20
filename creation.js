@@ -161,6 +161,7 @@ class Personnage {
 };
 
 var persoFull = [];
+console.log('BOUT');
 
 function ajouter() {
     var personnage = new Personnage();
