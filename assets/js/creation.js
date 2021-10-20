@@ -168,6 +168,10 @@ function ajouter() {
         alert(`On t'as dis entre 50 et 200 Ducon! Retourne en maternelle! Même mon gosse y arrive!`);
         return;
     };
+    if (ageperso.value == '') {
+        alert(`Jte savais jeune, mais au point de pas avoir d'avoir d'âge. La franchement, GG!`);
+        return;
+    };
     var personnage = new Personnage();
 
     personnage.nom = nomperso.value;
