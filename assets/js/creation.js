@@ -1,6 +1,5 @@
 
 
-
 // creation de formulaire
 var form = document.createElement("form");
 document.body.appendChild(form);
@@ -141,7 +140,7 @@ div2.append(pv);
 var btnConf = document.createElement("BUTTON");
 btnConf.innerHTML = "Creer";
 btnConf.setAttribute("type", "button");
-btnConf.setAttribute("onclick", "ajouter()");
+btnConf.setAttribute("onclick", "ajouter(), AffichagePerso()");
 
 div3.appendChild(btnConf);
 
@@ -161,12 +160,16 @@ class Personnage {
 };
 
 
-var persoFull = [];
+const persoFull = [];
 
 function ajouter() {
 
+    if (pv.value < 50 || pv.value > 200) {
+        alert(`On t'as dis entre 50 et 200 Ducon! Retourne en maternelle! Même mon gosse y arrive!`);
+        return;
+    };
     var personnage = new Personnage();
-    
+
     personnage.nom = nomperso.value;
     personnage.age = ageperso.value;
     personnage.race = selectRace.value;
@@ -175,8 +178,16 @@ function ajouter() {
     personnage.pv = pv.value;
     persoFull.push(personnage);
     console.log(persoFull);
-
 };
 
 
+// Affichage des persos 
+function AffichagePerso() {
+    var characterUl = document.getElementById('characterUl');
+    var text = ''
+    for (let i = 0; i < persoFull.length; i++) {
+        text += `<li><ul><li>` + persoFull[i].nom + `</li><li>` + persoFull[i].pv + `/` + persoFull[i].pv + `</li></ul></li>`;
+    }
+    characterUl.innerHTML = text;
+}
 

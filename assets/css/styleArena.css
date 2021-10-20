@@ -17,7 +17,7 @@ form{
     border: solid black 1px;
    width:50%;
    text-align: center;
-   background:url("../img/img-arene/background-creation.jpg") center/cover no-repeat;
+   background:url("../img/img-arene/background-.jpg") center/cover no-repeat;
    padding-bottom: 10px;
 
 }
@@ -40,9 +40,12 @@ form div button{
 
 /* Liste de personnage */
 #characterList{
-    border: 1px solid purple;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../img/img-arene/background-affichage-perso.jpg) ;
+    background-size: cover;
     text-align: right;
     width: 20%;
+    height: 300px;
+    overflow: auto;
 }
 
 #characterList ul{
