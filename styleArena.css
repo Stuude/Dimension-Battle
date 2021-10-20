@@ -27,7 +27,8 @@ form{
     border: solid black 1px;
    width:50%;
    text-align: center;
-   background-color: aqua;
+   background:url("./img-arene/background-creation.jpg") center/cover no-repeat;
+   padding-bottom: 10px;
 
 }
 form div { 
@@ -39,11 +40,13 @@ form div input, form div select{
     margin:5px;
     padding: 5px;
     border-radius: 5px;
+    opacity: 0.8;
 
 }
 form div button{
     padding: 10px;
     border-radius: 90px;
+    
 }
 
 
