@@ -6,9 +6,18 @@ function chooseArena(){
 
 var div = document.getElementById("imgarene")    
     
+
+// Le switch qui nous permet de faire les choix entre les maps (avec une map par défaut)
+
 switch (choix) {
+
+    // le case permet de chosir la value du select
+
     case "Namek":
-        div.style.backgroundImage = "url('img-arene/namek.PNG')";
+
+        
+
+        div.style.backgroundImage = "url('img-arene/namek.PNG')"   ;
         break;
     case "Glaciale":
         div.style.backgroundImage = "url('img-arene/ice_map.PNG')";
