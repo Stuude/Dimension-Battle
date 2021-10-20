@@ -78,10 +78,4 @@ function ecritContext() {
 
 
 
-
 // FIN CODE AKIN// 
-
-
-
-
-
