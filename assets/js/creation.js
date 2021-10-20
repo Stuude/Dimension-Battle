@@ -178,7 +178,33 @@ function ajouter() {
 
 };
 
+function listHero() {
+  // creation options
+  for (hero in persoFull) {
+      if(hero != "undefined")
+        {
+          console.log(hero.nom);
+        } else {
+          alert("vous devez créer au moins un hero");
+        }
 
+  }
+}
+
+var formLst = document.createElement("form");
+document.body.appendChild(formLst);
+var divLst = document.createElement("div");
+formLst.appendChild(divLst);
+
+//Creation buton de validation
+var btnLst = document.createElement("BUTTON");
+btnLst.innerHTML = "List";
+btnLst.setAttribute("type", "button");
+btnLst.setAttribute("onclick", "listHero()");
+
+divLst.appendChild(btnLst);
+
+// INTERACTION
 // creation de Formulaire D'interactions
 var formInteract = document.createElement("form");
 formInteract.setAttribute("id", "formInteract");
@@ -216,12 +242,9 @@ var selectCible = document.createElement("select");
 var option = document.createElement("option");
 
 
-// creation options
-for (const property in persoFull) {
-  console.log(`${property}: ${persoFull[property]}`);
-  property.value = property;
-  property.text = property;
-}
+
+
+
 
 
 // ajout options a select

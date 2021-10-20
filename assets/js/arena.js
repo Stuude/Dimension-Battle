@@ -34,14 +34,14 @@ function chooseArena() { // la fonction chooseArena lié au select du html perme
     switch (choix) { // A l'aide de switch (choix) nous allons associer des valeurs a arena (voir variable choix)
         case "namek": // La case "Namek" que l'on retrouve dans le html dans les cases option est associé à l'url d'une image afin que celle ci soit chargée dans la div qui a pour id imgarena
             div.style.backgroundImage = "url('./assets/img/img-arene/namek.png')";
-            alert("Contexte Namek : " + cNamek);// msg d'alerte avec le contexte prédéfinie de Namek
+            // alert("Contexte Namek : " + cNamek);// msg d'alerte avec le contexte prédéfinie de Namek
             btnedit.style.display = "none";// faire disparaitre le boutton contexte rédigé
             document.getElementById("ctxtpred").innerHTML = "<b>Contexte Namek : </b>" + cNamek; // Affichage dans le html le contexte prédéfinie de Namek
             return choix;
             break;
         case "glaciale":
             div.style.backgroundImage = "url('./assets/img/img-arene/ice_map.PNG')";
-            alert("Contexte Glaciale : " + cGlaciale);// msg d'alerte avec le contexte prédéfinie de Glaciale
+            // alert("Contexte Glaciale : " + cGlaciale);// msg d'alerte avec le contexte prédéfinie de Glaciale
             btnedit.style.display = "none"; // faire disparaitre le boutton contexte rédigé
             document.getElementById("ctxtpred").innerHTML = "<b>Contexte Glaciale : </b>" + cGlaciale; // Affichage dans le html le contexte prédéfinie de Glaciale
             return choix;
@@ -49,7 +49,7 @@ function chooseArena() { // la fonction chooseArena lié au select du html perme
 
         case "jungle":
             div.style.backgroundImage = "url('./assets/img/img-arene/map_jungle.PNG')";
-            alert("Contexte Jungle : " + cJungle);// msg d'alerte avec le contexte prédéfinie de Jungle
+            // alert("Contexte Jungle : " + cJungle);// msg d'alerte avec le contexte prédéfinie de Jungle
             btnedit.style.display = "none";// faire disparaitre le boutton contexte rédigé
             document.getElementById("ctxtpred").innerHTML = "<b>Contexte Jungle : </b>" + cJungle; // Affichage dans le html le contexte prédéfinie de Jungle
             return choix;
@@ -57,7 +57,7 @@ function chooseArena() { // la fonction chooseArena lié au select du html perme
 
         case "nocturne":
             div.style.backgroundImage = "url('./assets/img/img-arene/nuit.png')";
-            alert("Contexte Jungle : " + cNocturne);// msg d'alerte avec le contexte prédéfinie de Nocturne
+            // alert("Contexte Jungle : " + cNocturne);// msg d'alerte avec le contexte prédéfinie de Nocturne
             btnedit.style.display = "none";// faire disparaitre le boutton contexte rédigé
             document.getElementById("ctxtpred").innerHTML = "<b>Contexte Nocturne : </b>" + cNocturne; // Affichage dans le html le contexte prédéfinie de Nocturne
             return choix;
