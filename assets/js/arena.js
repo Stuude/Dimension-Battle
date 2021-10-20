@@ -100,9 +100,7 @@ function ecritContext() { // la fonction chooseArena lié au select du html perm
         // Affichage de la valeur
         let newContexte = new Contexte(inputVal);
         alert("Contexte : " + newContexte.texte); // msg d'alerte avec le contexte rédigé
-        var p = document.createElement("p"); // création d'un element paragraphe qui va être la valeur p
-        document.body.appendChild(p); //affichage du praragraphe dans l'html
-        p.innerHTML = "<b>Le contexte :</b> " + newContexte.texte; //affichage du contexte rédigé
+        document.getElementById("ctxtpred").innerHTML = "<b>Le contexte :</b> " + newContexte.texte; //affichage du contexte rédigé
 
         myContexte.style.display = "none"; // faitre dispaitre le champ de texte
         btnCxt.style.display = "none"; // faire dispaitre le bouton Envoyer
