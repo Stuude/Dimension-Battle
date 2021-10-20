@@ -55,7 +55,7 @@ form div button{
 
 /* Liste de personnage */
 #characterList{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../img/img-arene/background-affichage-perso.jpg) ;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../img/img-arene/background-affichage-perso.jpg") ;
     background-size: cover;
     text-align: right;
     width: 20%;
