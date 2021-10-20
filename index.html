@@ -14,42 +14,37 @@
 <!--akin code contexte aléatoire -->
 
 <body>
-        <button onclick="aleatoire();" id="btnalea">Contexte aléatoire</button>
-        <div id="contexte_aleatoire"></div>
-        <br><br>
-        <!-- akin code contexte imposé par un joueur -->
-        <button onclick="ecritContext();" id="btnedit">Rediger le contexte</button>
-        <!-- akin script-->
+    <button onclick="aleatoire();" id="btnalea">Contexte aléatoire</button>
+    <div id="contexte_aleatoire"></div>
+    <br><br>
+    <!-- akin code contexte imposé par un joueur -->
+    <button onclick="ecritContext();" id="btnedit">Rediger le contexte</button>
+    <!-- akin script-->
 
 
-  
+
     <!-- Pierre/MichelChoix arene liste + division qui contient image arene -->
 
     <!-- Choix arene liste + division qui contient image arene -->
-        <h2>Choix de l'arène</h2>
-        <!-- Creation d'un select (liste de choix déroulant) afin de choisir une arène, onchange permet de lié la fonction chooseArena au select (voir arena.js) -->
-        <select name="maps" id="map-select" onchange="chooseArena()">
+    <h2>Choix de l'arène</h2>
+    <!-- Creation d'un select (liste de choix déroulant) afin de choisir une arène, onchange permet de lié la fonction chooseArena au select (voir arena.js) -->
+    <select name="maps" id="map-select" onchange="chooseArena()">
+
+        <option value="">Choose a map</option>
         <!-- les balises option contiennent value qui permettent d'associer une image à l'option (voir arena.js) -->
-            <option value="">Choose a map</option>
+        <option value="namek">Namek</option>
+        <option value="glaciale">Glaciale</option>
+        <option value="jungle">Jungle</option>
+        <option value="nocturne">Nocturne</option>
 
-            <option value="Namek">Namek</option>
-            <option value="Glaciale">Glaciale</option>
-            <option value="Jungle">Jungle</option>
-            <option value="Nocturne">Nocturne</option>
-        
-        </select>
-        <!-- division qui contient l'image selectionnée, l'ID permet d'associer la nature de ce qui est affiché en fonction du choix (voir arena.js) -->
-        <div id="imgarene" class="arena" >
+    </select>
 
-            <option value="namek">Namek</option>
-            <option value="glaciale">Glaciale</option>
-            <option value="jungle">Jungle</option>
-            <option value="nocturne">Nocturne</option>
+    <!-- division qui contient l'image selectionnée, l'ID permet d'associer la nature de ce qui est affiché en fonction du choix (voir arena.js) -->
+    <div id="imgarene" class="arena"></div>
 
-        </select>
-        <div id="imgarene" class="arena" ></div>
-        <script type="text/javascript" src="arena.js"></script>
-        <script type="text/javascript" src="contexte.js"></script>
+    <script type="text/javascript" src="arena.js"></script>
+    <script type="text/javascript" src="contexte.js"></script>
 
 </body>
+
 </html>
