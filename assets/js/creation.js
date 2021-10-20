@@ -58,7 +58,7 @@ div1.appendChild(selectRace);
 
 // FIN DIV 1
 
-//DEBUT DIV 2 
+//DEBUT DIV 2
 
 // selection Equipement
 var selectEquip = document.createElement("select");
@@ -137,7 +137,7 @@ div2.append(pv);
 // FIN DIV 2
 
 
-//Creation buton de validation 
+//Creation buton de validation
 var btnConf = document.createElement("BUTTON");
 btnConf.innerHTML = "Creer";
 btnConf.setAttribute("type", "button");
@@ -147,7 +147,7 @@ div3.appendChild(btnConf);
 
 
 
-// definition classe 
+// definition classe
 
 class Personnage {
     constructor(nom, age, race, arme, pouvoir, pv) {
@@ -160,23 +160,115 @@ class Personnage {
     }
 };
 
-
 var persoFull = [];
+console.log('BOUT');
 
 function ajouter() {
-
     var personnage = new Personnage();
-    
+
     personnage.nom = nomperso.value;
     personnage.age = ageperso.value;
     personnage.race = selectRace.value;
     personnage.arme = selectEquip.value;
     personnage.pouvoir = selectPouv.value;
     personnage.pv = pv.value;
+
     persoFull.push(personnage);
     console.log(persoFull);
 
 };
 
 
+// creation de Formulaire D'interactions
+var formInteract = document.createElement("form");
+formInteract.setAttribute("id", "formInteract");
+document.body.appendChild(formInteract);
+// creation div interactions
+var div1Interact = document.createElement("div");
+formInteract.appendChild(div1Interact);
+var div2Interact = document.createElement("div");
+formInteract.appendChild(div2Interact);
+var div3Interact = document.createElement("div");
+formInteract.appendChild(div3Interact);
+// DEBUT DIV 1 interactions
+// creation input attaque interactions
+var atk = document.createElement("input");
+div1Interact.appendChild(atk);
+atk.setAttribute("placeholder", "attaque")
 
+
+// creation input defense interactions
+var def = document.createElement("input");
+div1Interact.appendChild(def);
+def.setAttribute("placeholder", "defense")
+
+// creation input defense interactions
+var all = document.createElement("input");
+div1Interact.appendChild(all);
+all.setAttribute("placeholder", "everything")
+
+
+// label pour le selecteur cible
+
+
+// selection cible
+var selectCible = document.createElement("select");
+var option = document.createElement("option");
+
+
+// creation options
+for (const property in persoFull) {
+  console.log(`${property}: ${persoFull[property]}`);
+  property.value = property;
+  property.text = property;
+}
+
+
+// ajout options a select
+selectCible.add(option);
+
+div1Interact.appendChild(selectCible);
+
+// FIN DIV 1
+
+
+//Creation buton de validation
+var btnPunch = document.createElement("BUTTON");
+btnPunch.innerHTML = "Action";
+btnPunch.setAttribute("type", "button");
+btnPunch.setAttribute("onclick", "getAction()");
+
+div3Interact.appendChild(btnPunch);
+
+
+
+
+// class Interact {
+//   constructor(atk,def,all,cible,user){
+//     this.atk =  atk();
+//     this.def =  def();
+//     this.all =  all();
+//     this.cible = persoFull.personnage[x].name;
+//     this.user = persoFull.personnage[x].name;
+//     alert(this.cible);
+//     alert(this.user);
+//   }
+//
+//   atk(x){
+//     var charge = x;
+//     alert(charge);
+//   }
+//
+//   def(x){
+//     var contre = x;
+//     alert(contre);
+//   }
+//
+//   all(x){
+//     var heart = x;
+//     alert(heart);
+//   }
+// }
+//
+//
+// var ready = new Interact(atk(5));
