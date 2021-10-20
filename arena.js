@@ -4,30 +4,30 @@ function chooseArena(){
     var arena = document.getElementById("map-select");
     var choix = arena.value;
 
-var div = document.getElementById("imgarene")    
-    
+var div = document.getElementById("imgarene")
+
 switch (choix) {
-    case "Namek":
-        div.style.backgroundImage = "url('img-arene/namek.PNG')";
+    case "namek":
+        div.style.backgroundImage = "url('img-arene/namek.png')";
         break;
-    case "Glaciale":
+    case "glaciale":
         div.style.backgroundImage = "url('img-arene/ice_map.PNG')";
         break;
 
-    case "Jungle":
+    case "jungle":
         div.style.backgroundImage = "url('img-arene/map_jungle.PNG')";
-        break;  
-        
-    case "Nocturne":
-        div.style.backgroundImage = "url('img-arene/nuit.PNG')";
+        break;
+
+    case "nocturne":
+        div.style.backgroundImage = "url('img-arene/nuit.png')";
         break;
 
     default:
         console.log("nothing");
-        
 
-    }    
-    
+
+    }
+
 }
 
 
@@ -44,7 +44,7 @@ switch (choix) {
 
 
 
-    
+
 
 
 // if arena.value = choix
