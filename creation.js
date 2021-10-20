@@ -160,19 +160,19 @@ class Personnage {
     }
 };
 
-
 var persoFull = [];
+console.log('BOUT');
 
 function ajouter() {
-
     var personnage = new Personnage();
-    
+
     personnage.nom = nomperso.value;
     personnage.age = ageperso.value;
     personnage.race = selectRace.value;
     personnage.arme = selectEquip.value;
     personnage.pouvoir = selectPouv.value;
     personnage.pv = pv.value;
+
     persoFull.push(personnage);
     console.log(persoFull);
 

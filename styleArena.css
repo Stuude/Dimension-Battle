@@ -5,41 +5,37 @@
 
 }
 
+
+
+
 .arena{
     border: solid black 1px;
     width: 50%; height: 300px;
     background-size: cover;
-    
-}
 
+}
 /* Debut code creation de perso */
 form{
-    margin-top: 10px;
+
     border: solid black 1px;
    width:50%;
    text-align: center;
-   background:url("../img/img-arene/background-creation.jpg") center/cover no-repeat;
-   padding-bottom: 10px;
+   background-color: aqua;
 
 }
-form div {
+form div { 
     margin-top : 10px;
-
+    
 }
 
 form div input, form div select{
     margin:5px;
     padding: 5px;
-    border-radius: 5px;
-    opacity: 0.8;
 }
 
 form div button{
     padding: 10px;
     border-radius: 90px;
-<<<<<<< HEAD
-}
-=======
 }
 
 /* Liste de personnage */
@@ -57,5 +53,3 @@ form div button{
 #characterList > ul{
     margin: 20px 15px;
 }
-
->>>>>>> 788e2425f2a70b56a4e0b341fa9b137abcfd2210
